@@ -7,81 +7,118 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         header {
             background-color: #2c3e50;
             color: white;
-            padding: 1rem;
             text-align: center;
+            padding: 20px;
             font-size: 24px;
         }
         nav {
-            background: #34495e;
-            padding: 0.5rem;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 10px;
-            padding: 8px 16px;
-            display: inline-block;
+            margin: 0 15px;
+            font-size: 18px;
         }
         nav a:hover {
-            background: #1abc9c;
+            text-decoration: underline;
         }
         .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 20px auto;
+            width: 80%;
+            margin: auto;
             padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .section {
-            margin-bottom: 30px;
-            border-left: 4px solid #1abc9c;
-            padding-left: 15px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .footer {
-            text-align: center;
+            background: white;
             padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
 
-<header>Chocobo Deckbuilding Journey</header>
+<header>
+    Chocobo Deckbuilding Journey
+</header>
 
 <nav>
-    <a href="#concept">Concept & Theme</a>
+    <a href="#concept">Concept</a>
     <a href="#sorting">Sorting & Refinement</a>
-    <a href="#curve">Curve Adjustments</a>
-    <a href="#final">Final Deck & Playtest</a>
+    <a href="#adjustments">Curve Adjustments</a>
+    <a href="#final">Final Tweaks & Playtesting</a>
 </nav>
 
 <div class="container">
 
-    <div id="concept" class="section">
-        <h2>1. Concept & Theme</h2>
-        <p>Started with a Chocobo-themed deck, later pivoted to Toski for a fun, nostalgic, schoolyard Magic vibe.</p>
-        <p>Prioritized cute, silly creatures, old-school cards, and fun interactions.</p>
-        <img src="file-CFuhbw7CqRxQTCyNTuR3pU" alt="Initial Deck Layout">
+    <div class="section" id="concept">
+        <h2>1. Initial Concept & Theme</h2>
+        <p>This deck started as a Chocobo concept but evolved into a Toski deck driven by nostalgia and meme energy. I wanted a deck with old-school cards, fun interactions, and creatures that spark joy.</p>
+        <p>I pulled cards that caught my eye, divided them into creatures and non-creatures, and then organized them by mana cost.</p>
+        <div class="image-gallery">
+            <img src="images/concept.jpg" alt="Deck concept">
+        </div>
     </div>
 
-    <div id="sorting" class="section">
+    <div class="section" id="sorting">
         <h2>2. Sorting & Refinement</h2>
-        <
+        <p>As I pulled cards, I found more that were meme-worthy in SparkJoy than the seven I initially planned. That led me to consider Toski as the commander, letting me play more fun cards rather than optimizing a Voltron-style Chocobo deck.</p>
+        <p>I started sorting by asking myself which cards truly sparked joy and which ones fulfilled the deck’s vision. I also noticed the distinction between cards that leverage multiple creatures versus those that boost a single creature.</p>
+        <div class="image-gallery">
+            <img src="images/sorting1.jpg" alt="Sorting cards">
+            <img src="images/sorting2.jpg" alt="Deck layout">
+        </div>
+    </div>
+
+    <div class="section" id="adjustments">
+        <h2>3. Mana Curve & Playability Adjustments</h2>
+        <p>Noticing an overloaded 3-drop slot, I made cuts to smooth out the curve. I focused on adding more 1- and 2-drop creatures and ramp to accelerate Toski.</p>
+        <p>Some spells, like Shamanic Revelation, became unnecessary because Toski naturally provides repeatable card draw. Similarly, I cut high-cost enchantment removal since I had lower-cost options.</p>
+        <p>When recounting, I realized I forgot to count my proxied Chocobo! That was an injustice that had to be fixed.</p>
+        <div class="image-gallery">
+            <img src="images/curve_adjustment.jpg" alt="Mana Curve Adjustments">
+        </div>
+    </div>
+
+    <div class="section" id="final">
+        <h2>4. Final Refinements & Playtesting</h2>
+        <p>I reviewed my cuts and added creatures over spells to stay on theme. After fine-tuning the deck, I locked in the land count and prepared to test.</p>
+        <h3>First Game Night</h3>
+        <p>On my first night out with this deck, I got to see an old friend from five years ago. I played Joven’s Ferrets on turn three and beat face with them all game. Toski kept the cards flowing, and Nykthos gave me a boatload of mana.</p>
+        <p>The game’s turning point: My opponent cast Jokulhaups, wiping the board. But I had two open mana for Heroic Intervention. I saved my board and won from there.</p>
+        <p>This deck’s synergy, fun factor, and resilience all came together in its first real game. A perfect first run!</p>
+        <div class="image-gallery">
+            <img src="images/playtest1.jpg" alt="Finalized deck">
+            <img src="images/playtest2.jpg" alt="Game in progress">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
